@@ -1,5 +1,70 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# ⏳ Countdown Dashboard (倒數計時儀表板)
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat&logo=vuedotjs&logoColor=%234FC08D)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
+
+這是一個基於 **Vue 3** 與 **Vite** 開發的響應式倒數計時儀表板。
+設計目的是提供一個極簡、高視覺專注度的時間管理工具，讓使用者能夠即時追蹤多個重要里程碑的剩餘時間。
+
+👉 **[線上預覽 (Live Demo)](https://jason111nn.github.io/My-Countdown/)**
+
+## ✨ 專案特色
+
+* **多目標管理**：支援切換查看不同的目標日期（如專案截止、考試、活動）。
+* **精準計時**：即時計算剩餘的天、時、分、秒。
+* **配置化架構**：所有資料與提醒事項皆透過 JSON 管理，易於維護與擴充。
+* **響應式設計**：使用 Tailwind CSS 建構，完美支援手機與桌面版。
+
+## 🛠️ 技術棧
+
+* **核心框架**：Vue 3 (Composition API)
+* **建置工具**：Vite
+* **樣式庫**：Tailwind CSS
+* **部署**：GitHub Pages
+
+## ⚙️ 本地執行 (Setup)
+
+如果你想在本地端運行此專案，請執行以下指令：
+
+```bash
+# 安裝依賴
+npm install
+
+# 啟動開發伺服器
+npm run dev
+
+# 打包生產版本
+npm run build
+
+```
+
+## 📝 配置說明
+
+專案中的日期與事件可以透過修改 `src/db.json` 進行自定義：
+
+```json
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "目標事件名稱",
+      "date": "2026-03-26T08:00:00"
+    }
+  ],
+  "reminders": [
+    "每日待辦事項 A",
+    "每日待辦事項 B"
+  ]
+}
+
+```
+
+## 🚀 部署指令
+
+本專案包含自動化部署腳本，執行以下指令即可發布至 GitHub Pages：
+
+```bash
+npm run deploy
+```
