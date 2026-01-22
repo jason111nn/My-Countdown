@@ -1,0 +1,55 @@
+<svg width="300" height="400" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .sketch-line {
+        fill: white; /* 如果想透明就把這裡改成 none */
+        stroke: #333; /* 深灰色接近鉛筆感 */
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .eye {
+        fill: #333; /* 眼睛塗黑，或者改成 none 變空心 */
+        stroke: none;
+      }
+    </style>
+  </defs>
+
+  <path class="sketch-line" d="
+    M 50 100 
+    C 45 60, 55 40, 70 45  
+    C 80 40, 120 40, 130 45
+    C 145 40, 155 60, 150 100
+    L 150 110
+    L 50 110 Z" 
+  />
+
+  <ellipse cx="80" cy="85" rx="12" ry="22" class="sketch-line" style="fill:none; stroke-width:2.5"/>
+  <ellipse cx="120" cy="85" rx="12" ry="22" class="sketch-line" style="fill:none; stroke-width:2.5"/>
+
+  <path class="sketch-line" d="
+    M 55 130
+    C 30 140, 30 180, 55 200 
+    L 55 220 
+    C 60 250, 90 250, 100 240
+    C 110 250, 140 250, 145 220
+    L 145 200
+    C 170 180, 170 140, 145 130
+    Z" 
+  />
+  
+  <path class="sketch-line" d="M 85 140 L 80 230" style="stroke-width:2"/>
+  <path class="sketch-line" d="M 115 140 L 120 230" style="stroke-width:2"/>
+
+  <path class="sketch-line" d="
+    M 45 110 
+    C 45 130, 155 130, 155 110
+    C 155 95, 45 95, 45 110 Z" 
+    style="fill:white"
+  />
+  <path class="sketch-line" d="M 80 130 L 75 190 C 75 200, 95 200, 95 190 L 100 130" />
+
+  <path class="sketch-line" d="M 60 240 C 60 260, 90 260, 95 245" style="fill:none"/>
+  <path class="sketch-line" d="M 105 245 C 110 260, 140 260, 140 240" style="fill:none"/>
+
+</svg>
